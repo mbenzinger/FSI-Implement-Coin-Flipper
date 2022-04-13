@@ -5,9 +5,51 @@ document.addEventListener('DOMContentLoaded', function () {
     // This is just a sanity check to make sure your JavaScript script is getting loaded
     // You can remove it once you see it in your browser console in the developer tools
     console.log('Hi')
+let flipButton = document.querySelector('#flipCoin')
+let resetButton = document.querySelector('#resetScore')
+let tcHeads = document.querySelector('#heads')
+let tcTails = document.querySelector('#tails')
+let tcheadspercent = document.querySelector('#heads-percent')
+let tctailspercent = document.querySelector('#tails-percent')
+let headCount = 0
+let tailCount = 0
+let totalCount = 0
+let errImg = document.querySelector('#errImg')
+let errMessage = document.querySelector('#statusMessage')
+let errMessages = ['!','The Earth is our moon!','You shall do as the Scorions have done before you!','We smoke as we shoot the bird!','I am Err','Man, you hear what Im saying!','On the moon nerds get their pants pulled down and they are spanked with moon rocks']
 
     // TODO: Add event listener and handler for flip and clear buttons
+flipButton.addEventListener('click', function() {
+    let coinValue = Math.round(Math.random())
+        totalCount++
+    if (coinValue == 0) {
+            errImg.src = './assets/images/Penny-heads.jpg'
+            headCount++
+            errMessage.textContent = 'Hey, put me back!'
+    }   else {
+            errImg.src = './assets/images/Penny-tails.jpg'
+            tailCount++
+            errMessage.textContent =  errMessages[Math.round(Math.random()*6)]
+    }
+    let percentheads = ((headCount / totalCount) * 100).toFixed(2)
+    let percentTails = ((tailCount / totalCount) * 100).toFixed(2)
+    tcHeads.textContent = headCount
+    tcTails.textContent = tailCount
+    tcheadspercent.textContent = percentheads
+    tctailspercent.textContent = percentTails
 
+})
+
+resetButton.addEventListener('click', function()    {
+    headCount = 0
+    tailCount = 0
+    totalCount = 0
+    tcHeads.textContent = 0
+    tcTails.textContent = 0
+    tcheadspercent.textContent = "0%"
+    tctailspercent.textContent = "0%"
+    errImg.src = './assets/images/Penny-tails.jpg'
+})
     // Flip Button Click Handler
         // TODO: Determine flip outcome
         // TODO: Update image and status message in the DOM
