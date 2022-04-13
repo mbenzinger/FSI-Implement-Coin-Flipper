@@ -16,12 +16,12 @@ let tailCount = 0
 let totalCount = 0
 let errImg = document.querySelector('#errImg')
 let errMessage = document.querySelector('#statusMessage')
-let errMessages = ['Ya all have any eggs? Cause Im totally going to mess someones house up!'
+let errMessages = ['Ya all have any eggs? Cause I\'m totally going to mess someones house up!'
                     ,'Yeah, burn it!'
                     ,'The Earth is our moon!'
                     ,'You shall do as the Scorpions have done before you!'
                     ,'We smoke as we shoot the bird!'
-                    ,'Man, you hear what Im saying!'
+                    ,'Man, you hear what I\'m saying!'
                     ,'On the moon nerds get their pants pulled down and they are spanked with moon rocks'
                     ,'Take two, mother muchachos!'
                     ,'Hand over those magazines!'
