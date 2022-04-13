@@ -31,11 +31,11 @@ flipButton.addEventListener('click', function() {
     let coinValue = Math.round(Math.random())
         totalCount++
     if (coinValue == 0) {
-            errImg.src = './assets/images/Penny-heads.jpg'
+            errImg.src = './assets/images/penny-heads.jpg'
             headCount++
             errMessage.textContent = 'Hey, put me back!'
     }   else {
-            errImg.src = './assets/images/Penny-tails.jpg'
+            errImg.src = './assets/images/penny-tails.jpg'
             tailCount++
             errMessage.textContent =  errMessages[Math.round(Math.random()*8)]
     }
@@ -56,7 +56,7 @@ resetButton.addEventListener('click', function()    {
     tcTails.textContent = 0
     tcheadspercent.textContent = "0%"
     tctailspercent.textContent = "0%"
-    errImg.src = './assets/images/Penny-tails.jpg'
+    errImg.src = './assets/images/penny-tails.jpg'
 })
     // Flip Button Click Handler
         // TODO: Determine flip outcome
