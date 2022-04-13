@@ -21,10 +21,11 @@ let errMessages = ['Ya all have any eggs? Cause Im totally going to mess someone
                     ,'The Earth is our moon!'
                     ,'You shall do as the Scorpions have done before you!'
                     ,'We smoke as we shoot the bird!'
-                    ,'I am Err'
                     ,'Man, you hear what Im saying!'
                     ,'On the moon nerds get their pants pulled down and they are spanked with moon rocks'
-                    ,'Take two, mother muchachos!']
+                    ,'Take two, mother muchachos!'
+                    ,'Hand over those magazines!'
+                    ,'We get checks from the government, and we use them to buy beer.']
 
     // TODO: Add event listener and handler for flip and clear buttons
 flipButton.addEventListener('click', function() {
@@ -37,7 +38,7 @@ flipButton.addEventListener('click', function() {
     }   else {
             errImg.src = './assets/images/penny-tails.jpg'
             tailCount++
-            errMessage.textContent =  errMessages[Math.round(Math.random()*8)]
+            errMessage.textContent =  errMessages[Math.round(Math.random()*9)]
     }
     let percentheads = ((headCount / totalCount) * 100).toFixed(2)
     let percentTails = ((tailCount / totalCount) * 100).toFixed(2)
