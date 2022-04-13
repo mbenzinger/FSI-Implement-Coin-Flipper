@@ -16,7 +16,15 @@ let tailCount = 0
 let totalCount = 0
 let errImg = document.querySelector('#errImg')
 let errMessage = document.querySelector('#statusMessage')
-let errMessages = ['!','The Earth is our moon!','You shall do as the Scorions have done before you!','We smoke as we shoot the bird!','I am Err','Man, you hear what Im saying!','On the moon nerds get their pants pulled down and they are spanked with moon rocks']
+let errMessages = ['Ya all have any eggs? Cause Im totally going to mess someones house up!'
+                    ,'Yeah, burn it!'
+                    ,'The Earth is our moon!'
+                    ,'You shall do as the Scorions have done before you!'
+                    ,'We smoke as we shoot the bird!'
+                    ,'I am Err'
+                    ,'Man, you hear what Im saying!'
+                    ,'On the moon nerds get their pants pulled down and they are spanked with moon rocks'
+                    ,'Take two, mother muchachos!']
 
     // TODO: Add event listener and handler for flip and clear buttons
 flipButton.addEventListener('click', function() {
@@ -29,7 +37,7 @@ flipButton.addEventListener('click', function() {
     }   else {
             errImg.src = './assets/images/Penny-tails.jpg'
             tailCount++
-            errMessage.textContent =  errMessages[Math.round(Math.random()*6)]
+            errMessage.textContent =  errMessages[Math.round(Math.random()*8)]
     }
     let percentheads = ((headCount / totalCount) * 100).toFixed(2)
     let percentTails = ((tailCount / totalCount) * 100).toFixed(2)
