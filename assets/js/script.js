@@ -58,7 +58,7 @@ resetButton.addEventListener('click', function()    {
     tcheadspercent.textContent = "0%"
     tctailspercent.textContent = "0%"
     errImg.src = './assets/images/penny-tails.jpg'
-    errMessage.textContent = "Is your ego satisfied? DAMN NO! Let's get flippin"
+    errMessage.textContent = 'Is your ego satisfied? DAMN NO! Let\'s get flippin\''
 })
     // Flip Button Click Handler
         // TODO: Determine flip outcome
