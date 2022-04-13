@@ -19,7 +19,7 @@ let errMessage = document.querySelector('#statusMessage')
 let errMessages = ['Ya all have any eggs? Cause Im totally going to mess someones house up!'
                     ,'Yeah, burn it!'
                     ,'The Earth is our moon!'
-                    ,'You shall do as the Scorions have done before you!'
+                    ,'You shall do as the Scorpions have done before you!'
                     ,'We smoke as we shoot the bird!'
                     ,'I am Err'
                     ,'Man, you hear what Im saying!'
